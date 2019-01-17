@@ -17,7 +17,8 @@ class UserSchema(ma.ModelSchema):
 
 
 class UserResource(Resource):
-    """Single object resource
+    """
+    返回指定user_id的用户信息
     """
     method_decorators = [jwt_required]
 
